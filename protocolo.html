@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset = "UTF-8"/>
+	<meta http-equiv = "X-UA-Compatible" content = "IF = edge"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+	<title>Protocolo</title>
+	
+	<link rel = "stylesheet" href = "style.css" />
+</head>
+<body>
+    <div class = "h">
+	<h1>Prefeitura de São Leopoldo</h1>
+	<p>Auto atendimento</p>
+	</div>
+	
+	<ul>
+        <li><a href="protocolo.html">Protocolo</a></li>
+        <li><a href="index.html">Cadastrar</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <section class = "container">
+
+    <header>Protocolo</header>
+
+	<form method = "POST" action = "protocolo.php" class="form">
+	  <div class = "column">
+	    <div class = "input-box">
+		    <label>Contribuinte</label>
+		    <input type = "text" name = "cont" placeholder = "Digite o nome do contribuinte" required />
+		</div>
+		<div class = "input-box">
+		    <label>Data</label>
+		    <input type = "date" name = "datap" required />
+		</div>
+	  </div>		
+		<div class = "input-box">
+		    <label>Descrição</label>
+		    <textarea name = "descricao" rows = "10" cols = "80" required></textarea>
+		</div>
+		
+	<button>Abrir protocolo</button>
+	</form>
+	</section>
+	
+</body>
+</html>

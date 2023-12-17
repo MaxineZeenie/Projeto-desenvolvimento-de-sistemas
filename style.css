@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+	font-family: 'Nunito', sans-serif;
+	box-sizing: border-box;
+}
+
+.h {
+	position: relative;
+	font-size: 50;
+	background-color: #0077b6;
+	padding: 30px;
+	text-align: left;
+	color: white;
+	display: block;
+	width: 100%;
+}
+
+ul {
+	list-style-type : none;
+	margin: 0;
+	padding : 0;
+	overflow : hidden;
+	background-color : #00b4d8;
+}
+
+li {
+	float : left;
+}
+
+li a {
+	display : block;
+	color : white;
+	text-align : center;
+	padding : 14px 16px;
+	text-decoration : none;
+}
+
+a {
+	display : block;
+	color : white;
+	text-align : center;
+	padding : 14px 16px;
+	text-decoration : none;
+}
+
+li a:hover {
+	background-color : #90e0ef;
+}
+
+th {
+	background-color: #90e0ef;
+}
+
+td, th{
+	text-align: center;
+	border: 1px solid black;
+	position: relative;
+	height: 40px;
+	width: 100%;
+	padding: 0 15px;
+	font-size: 1rem;
+	margin-top: 8px;
+}
+
+table {
+	width: 100%;
+	collapse: collapse;
+}
+
+body {
+	min-height: 100vh;
+    align-items: center;
+	justify-content: center;
+	background-color: #90e0ef;
+}
+
+.container {
+	position: static;
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	padding: 25px;
+	border-radius: 8px;
+	box-shadow: 0 0 15px rgba(0, 0, 0.1);
+}
+
+.container header {
+	font-size: 1.5rem;
+	color: #333;
+	font-weight: 500;
+	text-align: center;
+}
+
+.container .form {
+	margin-top: 30px;
+}
+
+.form .input-box {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.input-box label {
+	color: #333;
+}
+
+.form .input-box input, select, textarea {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	outline: none;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 0 15px;
+	font-size: 1rem;
+	color: #707070;
+	margin-top: 8px;
+}
+
+.form .column {
+	display: flex;
+	column-gap: 15px;
+}
+	
+
+
+.form button {
+	height: 55px;
+	width: 100%;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	border: none;
+	border-radius: 6px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background-color: #00b4d8;
+}
+
+.form button:hover {
+	background-color: #90e0ef;
+}
+
+.conteudo {
+	diplay: none;
+}
+
+@media screen and (max-width: 500px) {
+	.form .column {
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset = "UTF-8"/>
+	<meta http-equiv = "X-UA-Compatible" content = "IF = edge"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+	<title>Cadastro</title>
+	
+	<link rel = "stylesheet" href = "style.css" />
+</head>
+<body>
+
+    <div class = "h">
+	<h1>Prefeitura de São Leopoldo</h1>
+	<p>Auto atendimento</p>
+	</div>
+	
+	<ul>
+        <li><a href="protocolo.html">Protocolo</a></li>
+        <li><a href="#">Cadastrar</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+	
+     
+    <section class = "container">
+	    
+	    <header>Cadastro</header>
+		<form method="POST" action="connect.php" class = "form">
+		  <div class = "column">
+			<div class = "input-box">
+				<label>Usuário</label>
+			    <input type = "text" name = "user" placeholder = "Digite seu nome de usuário" />
+			</div>	
+			
+			    <div class = "input-box">
+				<label>Senha</label>
+			    <input type = "password" name = "senha" placeholder = "Digite sua senha" />
+		        </div>
+		  </div>	
+		  <div class = "column">
+			    <div class = "input-box">
+				<label>Nome</label>
+			    <input type = "text" name = "nome" placeholder = "Digite seu nome" required />
+		        </div>
+				<div class = "input-box">
+				<label>CPF</label>
+			    <input type = "text" name = "cpf"placeholder = "Digite seu cpf" maxlength = "11" required />
+		        </div>
+		  </div>	
+          <div class = "column">		  
+				<div class = "input-box">
+				<label>Data de nascimento</label>
+			    <input type = "date" name = "data" maxlength = "4" required />
+		        </div>
+				<div class = "input-box">
+				<label>Sexo</label>
+			    <select = "sexo" name = "sexo" required>
+				    <option value = ""></option>
+					<option name = "sexo" value = "m">Masculino</option>
+					<option name = "sexo" value = "f">Feminino</option>
+					<option name = "sexo" value = "o">Outro</option>
+					<option name = "sexo" value = "n">Prefiro não informar</option>
+				</select>	
+		        </div>
+		  </div>		
+				<div class = "input-box">
+				<label>Endereço</label>
+			    <input type = "text" name = "rua" placeholder = "Digite sua rua" />
+		  <div class = "column">	
+			    <input type = "text" name = "numero" placeholder = "Digite o número da casa" />
+			    <input type = "text" name = "comp" placeholder = "Digite seu complemento" />
+		  </div>		
+			    <input type = "text" name = "bairro" placeholder = "Digite seu bairro" />
+			    <input type = "text" name = "cidade" placeholder = "Digite sua cidade" />
+		        </div>		
+			<button>Cadastrar</button>	
+	    </form>
+	</section>		
+
+</body>
+</html>
